@@ -71,6 +71,10 @@ public class VariableBasic {
 		// 문자 형태로 작성된 숫자를 
 		// 온전한 숫자값으로 도출하는 방법
 		System.out.println(f-'0');
+		
+		// 대문자 소문자
+		System.out.println((char)((int)'a'-32));
+		System.out.println((int)'A');
 	}
 	
 }
