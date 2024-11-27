@@ -75,6 +75,10 @@ public class VariableBasic {
 		// 대문자 소문자
 		System.out.println((char)((int)'a'-32));
 		System.out.println((int)'A');
+		
+		// 11. 상수
+		final double PI = 3.14;
+		final int MAX_SIZE = 100;
 	}
 	
 }
