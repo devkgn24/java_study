@@ -17,6 +17,31 @@ public class VariableBasic {
 		System.out.println("1 : "+score);
 		score = 95;
 		System.out.println("2 : "+score);
+		// 5. 문자열 변수의 초기화
+		String str1 = new String("감사");
+		String str2 = "합니다.";
+		// 6. 기본형과 문자열 비교
+		int num1 = 2;
+		int num2 = 2;
+		System.out.println(num1 == num2);
+		
+		String text1 = new String("apple");
+		String text2 = new String("apple");
+		System.out.println(text1 == text2);
+		System.out.println(text1.equals(text2));
+		
+		String text3 = "apple";
+		String text4 = "apple";
+		System.out.println(text3 == text4);
+		System.out.println(text2 == text3);
+		
+		// 7. charAt()
+		String word = "Hello";
+		char first = word.charAt(0);
+		System.out.println(first);
+		
+		
+		
 		
 	}
 	
