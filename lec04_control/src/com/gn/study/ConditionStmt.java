@@ -32,6 +32,25 @@ public class ConditionStmt {
 			System.out.println("3미만");
 		}
 		
+		// 변수의 값이 양수 vs 음수
+		// 양수 -> 짝수 vs 홀수
+		
+		int target = 0;
+		if(target > 0) {
+			// 양수
+			if(target % 2 == 0) {
+				// 양수 && 짝수
+			} else {
+				// 양수 && 홀수
+			}
+		} else if( target < 0 ) {
+			// 음수
+		} else {
+			// 0
+		}
+		
+		
+		
 	}
 
 }
