@@ -40,7 +40,50 @@ public class LoopStmt {
 			}
 			//System.out.print("C ");
 		}
+		
+		// 5. 중첩 for문 활용
+		// ****
+		// ****
+		System.out.println("===================");
+		for(int i = 1 ; i <= 2 ; i++) {
+			for(int j = 1 ; j <= 4 ;j++) {
+				System.out.print("*");
+			}
+			System.out.print("\n");
+		}
 
+		// 6. break를 사용한 중첩 for문
+		// 외부 : 0에서 부터 2 미만(=제외) 1씩 커지면서 반복
+		// 내부 : 0에서 부터 3 미만(=제외) 1씩 커지면서 반복
+		// for(초기식;조건식;증감식){}
+		for(int i = 0 ; i < 2 ; i++) {
+			System.out.print("1 ");
+			// break;
+			for(int j = 0 ; j < 3 ; j++) {
+				System.out.print("2 ");
+				// break;
+			}
+			System.out.print("3\n");
+			// break;
+		}
+		
+		// 7. while문
+		int start = 1; 
+//		while(start <= 10) {
+//			System.out.println(start);
+//			start++;
+//		}
+		while(true) {
+			System.out.println(start);
+			start++;
+			if(start > 10) {
+				break;
+			}
+		}
+		
+		
+		
+		
 				
 		
 	}
