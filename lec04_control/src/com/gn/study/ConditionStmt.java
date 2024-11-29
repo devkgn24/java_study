@@ -42,6 +42,9 @@ public class ConditionStmt {
 				// 양수 && 짝수
 			} else {
 				// 양수 && 홀수
+				if(target % 3 ==0) {
+					// 3의 배수
+				}
 			}
 		} else if( target < 0 ) {
 			// 음수
@@ -49,6 +52,17 @@ public class ConditionStmt {
 			// 0
 		}
 		
+		// 5. switch문
+		int day = 2; // 화요일
+		// 오늘은 O요일 입니다. 
+		String text = "";
+		switch(day) {
+			case 0 : text = "일"; break;
+			case 1 : text = "월"; break;
+			case 2 : text = "화"; break;
+			default : text = "모르는 "; break;
+		}
+		System.out.println(text+"요일 입니다.");
 		
 		
 	}
