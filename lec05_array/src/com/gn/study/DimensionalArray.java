@@ -117,5 +117,43 @@ public class DimensionalArray {
 		}
 		System.out.println("최소값 : "+min);
 		
+		// 12. 배열의 활용(3) : 오름차순, 내림차순
+		int[] data = {8,4,1,3};
+		// 인덱스 기준 : 0번과 1번 비교 -> 4,8,1,3
+		// 인덱스 기준 : 0번과 2번 비교 -> 1,8,4,3
+		// 0번과 3번 비교 -> 1,8,4,3
+		// 1번과 2번 비교 -> 1,4,8,3
+		// 1번과 3번 비교 -> 1,3,8,4
+		// 2번과 3번 비교 -> 1,3,4,8
+		
+		// 0 -> 1,2,3
+		// 1 -> 2,3
+		// 2 -> 3
+		
+		for(int i = 0 ; i < data.length-1 ; i++) {
+			for(int j = i+1 ; j < data.length ; j++) {
+				//System.out.println(i+" : "+j);
+				if(data[i] > data[j]) {
+					int temp = data[i];
+					data[i] = data[j];
+					data[j] = temp;
+				}
+			}
+		}
+		// 1,3,4,8
+		// 0번 vs 1번 : 3,1,4,8
+		// 0번 vs 2번 : 4,1,3,8
+		// 0번 vs 3번 : 8,1,3,4
+		// 1번 vs 2번 : 8,3,1,4
+		// 1번 vs 3번 : 8,4,1,3
+		// 2번 vs 3번 : 8,4,3,1
+		
+		
+		for(int d : data) {
+			System.out.print(d+", ");
+		}
+		
+		
+		
 	}
 }
