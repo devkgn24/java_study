@@ -89,6 +89,33 @@ public class DimensionalArray {
 			System.out.println(num);
 		}
 				
+		// 10. 배열의 활용 (1) - 총합과 평균
+		int[] sus = {83,90,100,100,50};	// 423 / 5 = 84.6
+		int sum = 0;
+		for(int su : sus) {
+			sum += su;
+		}
+		System.out.println(sum);
+		System.out.println((double)sum/5);
+		
+		// 11. 배열의 활용(2) - 최대값과 최소값
+		int[] arr = {8,9,10,4,2};
+		// 최대값
+		int max = arr[0];
+		for(int i = 0 ; i < arr.length ; i++) {
+			if(arr[i] > max) {
+				max = arr[i];
+			}
+		}
+		System.out.println("최대값 : "+max);
+		// 최소값
+		int min = arr[0];
+		for(int i = 0 ; i < arr.length ; i++) {
+			if(arr[i] < min) {
+				min = arr[i];
+			}
+		}
+		System.out.println("최소값 : "+min);
 		
 	}
 }
