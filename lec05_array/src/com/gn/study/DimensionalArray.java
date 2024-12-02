@@ -65,5 +65,30 @@ public class DimensionalArray {
 		for(int i = 0 ; i < fruits.length ; i++) {
 			System.out.println(fruits[i]);
 		}
+		
+		// 8. toCharArray
+		String text = "Hello World";
+		char[] charArr = text.toCharArray();
+		for(int i = 0 ; i < charArr.length ; i++) {
+			System.out.println(charArr[i]);
+		}
+		
+		// vs charAt(i) 
+		text = "안녕하세요.";
+		for(int i = 0 ; i < text.length() ; i++) {
+			System.out.println(text.charAt(i));
+		}
+		
+		// 9. for each문
+		int[] numbers = {1,2,3,4,5};
+		for(int i = 0 ; i < numbers.length ; i++) {
+			System.out.println(numbers[i]);
+		}
+		
+		for(int num : numbers) {
+			System.out.println(num);
+		}
+				
+		
 	}
 }

@@ -17,11 +17,23 @@ public class Practice01 {
 //		String[] friends = new String[]{"박지영","김태우","이지훈","최유진","정승호"};
 		String[] friends = {"박지영","김태우","이지훈","최유진","정승호"};
 		
+		// 홀수번째에 있는 친구들만 출력하기
 //		1 : 박지영
-//		2 : 김태우
 //		3 : 이지훈
-//		4 : 최유진
 //		5 : 정승호
+		
+//		System.out.println(friends[0]);
+//		System.out.println(friends[1]);
+//		System.out.println(friends[2]);
+//		System.out.println(friends[3]);
+//		System.out.println(friends[4]);
+		
+		for(int i = 0 ; i < friends.length ; i++) {
+			// 데이터의 위치가 홀수 위치일때
+			if((i+1) % 2 != 0) {
+				System.out.println((i+1)+" : "+friends[i]);
+			}
+		}
 		
 	}
 }
