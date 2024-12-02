@@ -56,5 +56,14 @@ public class DimensionalArray {
 		// (3) 초기화: Heap의 값 변경
 		score[0] = 90;
 		
+		// 7. 배열의 출력
+		// (1) 인덱스를 이용한 출력
+		System.out.println(age1[1]);
+		
+		// (2) 반복문을 이용한 출력
+		String[] fruits = {"딸기","체리","포도"};
+		for(int i = 0 ; i < fruits.length ; i++) {
+			System.out.println(fruits[i]);
+		}
 	}
 }
