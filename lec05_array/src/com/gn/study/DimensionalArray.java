@@ -152,7 +152,24 @@ public class DimensionalArray {
 		for(int d : data) {
 			System.out.print(d+", ");
 		}
-		
+		System.out.println("\n===== 배열의 복사 =====");
+		// 13. 배열의 복사
+		// (1) 얕은 복사
+		int[] arr1 = {5,6,7,8};
+//		int[] arr2 = arr1;
+		// (2) 깊은 복사
+		int[] arr2 = new int[arr1.length];
+		for(int i = 0 ; i < arr2.length ; i++) {
+			arr2[i] = arr1[i];
+		}
+		arr2[3] = 1000;
+		for(int num1 : arr1) {
+			System.out.print(num1+", ");
+		}
+		System.out.println();
+		for(int num2 : arr2) {
+			System.out.print(num2+", ");
+		}
 		
 		
 	}
