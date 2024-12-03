@@ -1,6 +1,9 @@
 package com.gn.study.basic.controller;
 
-import java.util.Scanner;
+//import java.util.Date;
+//import java.util.Scanner;
+
+import java.util.*;
 
 import com.gn.study.basic.model.vo.Car;
 
@@ -8,6 +11,7 @@ public class Run {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
+		Date d = new Date();
 		
 		
 		// 1. 참조변수 선언 -> Stack에 주소값 담을 공간 생김
