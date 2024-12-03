@@ -1,9 +1,15 @@
 package com.gn.study.basic.controller;
 
+import java.util.Scanner;
+
 import com.gn.study.basic.model.vo.Car;
 
 public class Run {
 	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
 		// 1. 참조변수 선언 -> Stack에 주소값 담을 공간 생김
 		Car c1;
 		// 2. new연산자 사용해서 객체 생성
@@ -11,8 +17,8 @@ public class Run {
 		// 3. 동시 진행(선언, 생성)
 		Car c2 = new Car();
 		
-//		String str;
-//		str = new String();
+		String str;
+		str = new String();
 		
 		// 클래스명은 같지만
 		// 패키지 위치는 다른 클래스 동시에 사용할 경우
