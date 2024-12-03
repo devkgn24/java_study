@@ -170,6 +170,30 @@ public class DimensionalArray {
 		for(int num2 : arr2) {
 			System.out.print(num2+", ");
 		}
+		System.out.println();
+		// Math.random() 0.0~0.99999 
+		// -> 1~100 사이의 정수 랜덤값 도출
+		double basic = Math.random();
+		System.out.println(basic);
+		
+		// 1. (최대값-최소값+1) 만큼 곱하기
+		double hundred = basic*(100-1+1);
+		System.out.println(hundred);
+		
+		// 2. 형변환
+		int casting = (int)hundred;
+		System.out.println(casting);
+		
+		// 3. 최소값 더하기
+		int add = casting + 1;
+		System.out.println(add);
+		
+		// 10~20 사이의 정수 랜덤값
+		int rnd = (int)(Math.random()*11)+10;
+		System.out.println(rnd);
+		
+		// 1~45 사이의 정수 랜덤값
+		
 		
 		
 	}
