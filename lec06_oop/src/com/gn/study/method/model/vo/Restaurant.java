@@ -23,6 +23,6 @@ public class Restaurant {
 	
 	// 4. 클래스(객체) 매개변수 -> 음료수 셋팅
 	public void sodaSetting(Soda soda) {
-		System.out.println(soda.name+" 먼저 셋팅하겠습니다.");
+		System.out.println(soda.name+" 먼저 셋팅하겠습니다.");	
 	}
 }
