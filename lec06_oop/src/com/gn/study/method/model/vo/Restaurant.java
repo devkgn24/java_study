@@ -11,7 +11,7 @@ public class Restaurant {
 	public void setTableNumber(int tableNumber) {
 		System.out.println("테이블 번호 "+tableNumber
 				+"에 앉으세요~");
-	}
+	} 
 	// 3. 배열 매개변수
 	// -> 주문 목록(배열)을 입력받아서 출력
 	public void processOrder(String[] menuItems) {
