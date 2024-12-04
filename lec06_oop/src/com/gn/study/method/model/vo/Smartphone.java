@@ -1,6 +1,15 @@
 package com.gn.study.method.model.vo;
 
 public class Smartphone {
+	
+	
+	
+	public Smartphone() {
+		
+	}
+	
+	
+	
 	// 1. 반환형X, 매개변수 X
 	// -> 앱 열림 메시지
 	public void openApp() {
@@ -24,5 +33,13 @@ public class Smartphone {
 	// -> 메시지 전송
 	public String sendMsg(String msg) {
 		return "메시지 \'"+msg+"\'가 전송되었습니다.";
+	}
+	
+	public void checkWork() {
+		Hospital hospital = new Hospital();
+		hospital.emergencyCall();
+		hospital.doctorCall();
+		hospital.staffAnnouncement();
+		// hospital.personalRecord();
 	}
 }
