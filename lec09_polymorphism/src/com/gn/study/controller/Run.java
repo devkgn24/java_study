@@ -15,6 +15,17 @@ public class Run {
 		Beverage b2 = new OrangeJuice();
 		
 		b1.drink();
+//		b1.ice();
+		
+		((Coffee)b1).ice();
+		((OrangeJuice)b2).fresh();
+		
+		Coffee b3 = new Coffee();
+		b3 = (Coffee)b1;
+		b3.ice();
+		
+		
+		
 		b2.drink();
 		
 		// 2. 객체 배열과 다형성
@@ -31,7 +42,25 @@ public class Run {
 		
 		for(Beverage b : arr) {
 			b.drink();
+//			b.ice();
+			
+//			System.out.println("확인X =============");
+//			((Coffee)b).ice();
+			
+			// 만약에 진짜 데이터가 Coffee면 ice()메소드 호출
+			if(b instanceof Coffee) {
+				((Coffee)b).ice();
+			}
+			// 만약에 진짜 데이터가 OrangeJuice면 fresh() 메소드 호출
+			else if(b instanceof OrangeJuice) {
+				((OrangeJuice)b).fresh();
+			}
+			
+			
+			
 		}
+		// 3. 클래스 다운캐스팅
+		
 		
 	}
 }
