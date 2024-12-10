@@ -14,5 +14,22 @@ public class Run {
 		}
 		
 		System.out.println(a+b);
+		
+		
+		System.out.println("===== Null 조심 =====");
+		String[] arr = new String[3];
+		try {
+			System.out.println(arr[0].length());
+		}catch(NullPointerException e) {
+			System.out.println("오류가 발생했어요!!");
+		}
+//		System.out.println(null.length());
+		
+		
+		
+		
+		
+		
+		
 	}
 }
