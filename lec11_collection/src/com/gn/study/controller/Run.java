@@ -93,5 +93,19 @@ public class Run {
 		for(Integer n : nums) {
 			System.out.println(n);
 		}
+		String a = new String();
+		
+		// ArrayList의 정렬
+		System.out.println("정렬전 : "+nums);
+		
+		Collections.sort(nums);
+		
+		System.out.println("오름차순 : "+nums);
+		
+		Collections.sort(nums, Collections.reverseOrder());
+		
+		System.out.println("내림차순 : "+nums);
+		
+		
 	}
 }
