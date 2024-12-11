@@ -1,8 +1,11 @@
 package com.gn.study.controller;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import com.gn.study.model.vo.Container;
+import com.gn.study.model.vo.Student;
 
 public class Run {
 	public static void main(String[] args) {
@@ -106,6 +109,30 @@ public class Run {
 		
 		System.out.println("내림차순 : "+nums);
 		
+		// ArrayList<객체>
+		List<Student> students = 
+				new ArrayList<Student>();
+		students.add(new Student("김철수",50));
+		
+		System.out.println(students);
+		
+		if(students.contains(new Student("김철수",50))) {
+			System.out.println("O");
+		}else {
+			System.out.println("X");
+		}
+		if(students.indexOf(new Student("김철수",50)) != -1) {
+			System.out.println("O");
+		}else {
+			System.out.println("X");
+		}
+		
+		students.add(new Student("이영희",40));
+		students.add(new Student("홍길동",30));
+		
+		System.out.println("정렬 전 : "+students);
+		Collections.sort(students);
+		System.out.println("정렬 후 : "+students);
 		
 	}
 }
