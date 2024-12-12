@@ -1,6 +1,7 @@
 package com.gn.study.controller;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 import com.gn.study.model.vo.Student;
@@ -48,5 +49,22 @@ public class SetRun {
 //		set1.retainAll(set2);
 		set1.removeAll(set2);
 		System.out.println(set1);
+		
+		Set<String> fruits = new HashSet<String>();
+		fruits.add("사과");
+		fruits.add("바나나");
+		fruits.add("체리");
+		
+		Iterator<String> iterator = fruits.iterator();
+		
+		while(iterator.hasNext()) {
+			String fruit = iterator.next();
+			System.out.print(fruit);
+//			iterator.remove();
+//			if(fruits.size() != 0) {
+//				System.out.print(", ");
+//			}
+		}
+		
 	}
 }

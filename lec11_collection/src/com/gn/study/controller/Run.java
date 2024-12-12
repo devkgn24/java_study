@@ -145,6 +145,19 @@ public class Run {
 		// 중복 데이터 추가 시도
 		city.add("서울");
 		System.out.println(city);
+		
+		for(String str : city) {
+			System.out.println(str);
+			if(city.size() == 0) {
+				System.out.println("마지막!!");
+			}else {
+				city.remove(str);	
+			}
+		}
+
+		
+		
+		
 		// 삭제
 		city.remove("서울");
 		System.out.println("삭제후 : "+city);
