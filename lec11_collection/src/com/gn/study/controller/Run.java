@@ -145,6 +145,11 @@ public class Run {
 		// 중복 데이터 추가 시도
 		city.add("서울");
 		System.out.println(city);
+		// 삭제
+		city.remove("서울");
+		System.out.println("삭제후 : "+city);
+		city.clear();
+		System.out.println("비우기 : "+city);
 		
 		Set<Student> set1 = new HashSet<Student>();
 		set1.add(new Student("김철수",30));
@@ -153,7 +158,9 @@ public class Run {
 		set1.add(new Student("김철수",30));
 				
 		System.out.println(set1);		
-				
+		
+		set1.remove(new Student("김철수",30));
+		System.out.println("삭제 후 : "+set1);
 				
 				
 		
