@@ -25,7 +25,7 @@ public class Run {
 		System.out.println("전화번호 : "+map.get("Emma").getPhone());
 		System.out.println("월급 : "+map.get("Emma").getSalary());
 
-				
+		
 		
 		
 		System.out.println("변경후 : "+map);
