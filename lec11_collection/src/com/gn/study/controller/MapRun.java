@@ -128,5 +128,7 @@ public class MapRun {
 		
 		System.out.println(flower2);
 		
+		TreeMap<String,String> test = new TreeMap<String,String>();
+		System.out.println(test.size() == 0);
 	}
 }
