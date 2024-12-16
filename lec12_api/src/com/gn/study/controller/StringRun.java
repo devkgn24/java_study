@@ -87,6 +87,21 @@ public class StringRun {
 		String empty3 = " 안 녕 ";
 		empty3 = empty3.trim();
 		System.out.println(empty3);
+		
+		String[] students = {"철수","영희","길동"};
+		String allStudent = String.join("-", students);
+		System.out.println(allStudent);
+		
+		String cutTest = "hello world";
+		System.out.println(cutTest.substring(6));
+		System.out.println(cutTest.substring(0,5));
+		// cutTest.charAt(3)
+		System.out.println(cutTest.substring(3,4));
+		
+		String file = "test.jpg";
+		String ex = file.substring(file.lastIndexOf(".")+1);
+		String file_name = file.substring(0,file.lastIndexOf("."));
+		System.out.println(ex+" : "+file_name);
 				
 		
 	}
