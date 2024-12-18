@@ -1,7 +1,10 @@
 package com.gn.study.controller;
 
 import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
 public class LocalDateRun {
 	public static void main(String[] args) {
@@ -24,5 +27,60 @@ public class LocalDateRun {
 		// (5) 필드 감소
 		LocalDate date4 = date1.minusDays(3);
 		System.out.println(date4);
+		
+		// 2. LocalTime
+		// (1) 현재 시간
+		LocalTime time1 = LocalTime.now();
+		System.out.println(time1);
+		// (2) 특정 시간 지정
+		LocalTime time2 = LocalTime.of(12,50,5);
+		System.out.println(time2);
+		// (3) 필드 조회
+		System.out.println(time1.getMinute());
+		// (4) 필드 증가
+		LocalTime time3 = time1.plusHours(7);
+		System.out.println(time3);
+		// (5) 필드 감소
+		LocalTime time4 = time1.minusMinutes(20);
+		System.out.println(time4);
+		
+		// 3. LocalDateTime
+		// (1) 현재 날짜와 시간 
+		LocalDateTime dateTime1 = LocalDateTime.now();
+		System.out.println(dateTime1);
+		// (2) 특정 날짜와 시간
+		LocalDateTime dateTime2 = LocalDateTime.of(2025,1,1,6,30,45);
+		System.out.println(dateTime2);
+		
+		// 4. DateTimeFormatter
+		// (1) 날짜와 시간 -> 문자열
+		LocalDateTime now1 = LocalDateTime.now();
+		DateTimeFormatter dtf1 
+			= DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 HH시 mm분 ss초");
+		String result1 = now1.format(dtf1);
+		System.out.println(result1);
+		// (2) 문자열 -> 날짜와 시간
+		String str2 = "2024-12-24 13:50:26";
+		DateTimeFormatter dtf2 
+			= DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+		LocalDateTime dateTime3 = LocalDateTime.parse(str2,dtf2);
+		System.out.println(dateTime3);
+		
+		LocalDate date5 = LocalDate.parse(str2,dtf2);
+		System.out.println(date5);
+		
+//		LocalDate now2 = LocalDate.now();
+//		String result2 = now2.format(dtf1);
+//		System.out.println(result2);
+		
+		LocalDate startDate = LocalDate.of(2024, 1, 1);
+		LocalDate endDate = LocalDate.of(2024, 12, 31);
+		
+		// 5. ChronoUnit
+		long daysBetween = ChronoUnit.DAYS.between(startDate, endDate);
+		System.out.println(daysBetween);
+		
+		
+		
 	}
 }
